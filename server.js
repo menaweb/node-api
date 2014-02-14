@@ -34,29 +34,7 @@ MongoClient.connect('mongodb://localhost:27017/todos', function(err, db){
 	
 	var Todo = db.collection('todos');
 
-	/*Todo.insert({'nombre': "Pepe"}, function(err, todo){
-		if(err) console.log(err);
-		else console.log("Hecho");
-	});*/
-
-	Todo.remove({_id: ObjectID("52fd6194cca3b6ff90e3238e")}, function(err, todo) {
-	        if(err){
-	            res.send(err);
-	        }
-	        else{
-	        	Todo.find().toArray(function(err, items) {
-					console.log(items);
-				});
-	        }
-	});
-
-	// var cursor = Todo.find().toArray(function(err, items) {
-	// 	console.log(items);
-	// });
 	
-
-	
-
 	// Rutas de nuestra API
 	// GET de todos los TODOs
 	app.get('/api/todos', function(req, res) {				
