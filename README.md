@@ -1,7 +1,7 @@
 node-api
 ========
 
-App Todo: Node.js + Mongodb + Angular.js.
+App Todo MEAN: Mongodb + Express + Node.js + Angular.js.
 
 Based in http://carlosazaustre.es/blog/tutorial-ejemplo-de-aplicacion-web-con-angular-js-y-api-rest-con-node tutorial with some changes:
 
